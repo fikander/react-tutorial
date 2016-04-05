@@ -22,6 +22,18 @@ pip install -r requirements.txt
 python server.py
 ```
 
+or, using Docker:
+
+```
+make build
+make start
+```
+
+Check your Docker machine IP with
+	docker-machine ip
+
+Visit <http://docker-machine-ip:3000/>
+
 ### Ruby
 ```sh
 ruby server.rb
