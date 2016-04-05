@@ -4,4 +4,4 @@ build:
 
 .PHONY: start
 start:
-	export HOST='0.0.0.0' && docker run --rm -it --name react-tutorial -p 3000:3000 -e HOST react-tutorial
+	export HOST='0.0.0.0' && docker run --rm -it --name react-tutorial -p 3000:3000 -e HOST -v `pwd`:/server react-tutorial
